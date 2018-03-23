@@ -1,0 +1,163 @@
+//Google web fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway:100i,200i');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Kavivanar');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i');
+
+
+$primary: #0173AD;
+$secondary: #F05F40;
+
+$orange1: #F05F40;
+$orange2: #f1846d;
+
+$text1: #1e836c;
+$text2: #45b29a;
+
+$blue1: #0173AD;
+$blue2: #00E2F6;
+
+$gray: #ddd;
+$white: #eee;
+
+.App {
+  text-align: center;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato';
+  background-color: $gray;
+  &.in-transition {
+  transition: transform 900ms ease;
+  }
+}
+h1,h2, h3{
+  margin-top: 0;
+}
+h1{
+  color: $text1;
+  font-size: 280%;
+  font-weight: 300;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h2{
+  color: $text2;
+  font-size: 170%;
+  font-weight: 300;
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h3{
+  color: $text2;
+  font-weight: 400;
+  font-size: 110%;
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.secondary{
+  h1{
+    color: $orange1;
+  }
+  h2{
+    color: $orange1;
+    text-align: center;
+  }
+  h3{
+    color: $orange2;
+    font-size: 125%;
+    font-weight: 300;
+  }
+}
+
+p{
+  font-family: 'Open Sans';
+  line-height: 180%;
+  color: #666;
+  text-align: left;
+}
+img{
+  transition: height 0.3s, width 0.3s;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  transition: background-color 0.5s, padding 0.3s, box-shadow 0.3s;
+}
+.column{
+  flex-direction: column;
+  align-items: center;
+}
+.page-section{
+  display: flex;
+  justify-content: center;
+  padding: 60px 0px;
+  background-color: #fff;
+}
+
+//Cover image
+.cover-img{
+  max-width: 100%;
+  height: 230px;
+  position: relative;
+  top: 500px;
+  background-image: url('./images/simple_cover3.png');
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  img{
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+.martin{
+    position: relative;
+    top: -300px;
+    padding-bottom: 1px;
+    padding-top: 20px;
+    background-image: url('./images/clouds.png');
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    h1{
+      color: $blue1;
+      font-size: 400%;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 100;
+    }
+    h3{
+      text-align: center;
+      color: $blue1;
+    }
+}
+
+.footer{
+  padding-top: 40px;
+  background-color: #333;
+  padding-bottom: 0px;
+  position: relative;
+  z-index: 1;
+
+  div{
+    flex-direction: row;
+    width: 650px;
+    max-width: 95%;
+    h1, h2, h3{
+      color: #666;
+      margin-bottom: 0px;
+    }
+    p{
+      color: #777;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+}
+.active{
+  color: #0173AD !important;
+  text-decoration: underline !important;
+
+}
