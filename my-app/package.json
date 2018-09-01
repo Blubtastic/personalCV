@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://www.martinstor.no",
+  "homepage": "https://www.martinstor.no/",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "node-sass-chokidar": "0.0.3",
