@@ -37,48 +37,43 @@ export default class Projects extends Component {
           <div className="articles">
             <h1>My voluntary work</h1>
             <div className="container about-item">
-              <div>
-                <img className="bubble-img"src={ms} alt="logo" />
-              </div>
+              <img className="bubble-img"src={ms} alt="logo" />
               <div className="text-left">
                 <h2>Hackerspace NTNU</h2>
                 <p className="narrow-text">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                  Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean commodo ligula eget dolor.
-                  Aenean massa. Cum sociis natoque penatibus et magnis dis
+                  PR-group <br/>
+                  I was a member of the student organization HACKERSPACE NTNU for 3 years, which focuses on helping students realize their tech projects by providing equipment, knowledge and a place to work.
+                  During this time i was responsible for promoting the organization through creating posters, organizing and so on.
                 </p>
               </div>
             </div>
 
             <div className="container about-item">
-              <div>
-                <img className="bubble-img"src={io} alt="logo" />
-              </div>
+              <img className="bubble-img"src={io} alt="logo" />
               <div className="text-left">
                 <h2>Informatics Band</h2>
                 <p className="narrow-text">
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                  Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean commodo ligula eget dolor.
-                  Aenean massa. Cum sociis natoque penatibus et magnis dis
+                  Drummer <br/>
+                  I am drumming for the recently created Online band, which mainly focuses on playing concerts for various events for the student organization Online.
+                  We have weekly rehearsals, but mostly play for fun.
                 </p>
               </div>
             </div>
 
             <div className="container about-item">
-              <div>
-                <img className="bubble-img"src={propeller} alt="logo" />
-              </div>
+              <img className="bubble-img"src={propeller} alt="logo" />
               <div className="text-left">
                 <h2>Trondheim Propeller Hat Club</h2>
                 <p className="narrow-text">
-                  HACKERSPACE, Online Band <br/>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                  Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean commodo ligula eget dolor.
-                  Aenean massa. Cum sociis natoque penatibus et magnis dis
+                  Co-founder <br/>
+                  As a goofy hobby project, me and another student Sølve Bø Hunvik created a group called Trondheim Propeller hat club, which arranges various social events where
+                  everyone are welcome as long as they are wearing a propeller hat. We currently have about 100 members.
                 </p>
               </div>
             </div>
           </div>
+
+          {/*
           <hr className="horline"/>
           <div className="articles">
             <h1>My hobbies and interests</h1>
@@ -91,7 +86,7 @@ export default class Projects extends Component {
               </p>
             </div>
           </div>
-
+        */}
 
         </div>
         <div className="expandBar">

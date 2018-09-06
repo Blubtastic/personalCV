@@ -64,7 +64,7 @@ $orange2: #f1846d;
   left: 37.5%;
   margin-left: -37.5%;
   padding: 0;
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.8);
   z-index: 10;
   box-shadow: 0 0 3px #ccc;
   transition: background-color 0.5s, padding 0.3s, box-shadow 0.3s;
@@ -120,18 +120,21 @@ $orange2: #f1846d;
   }
 }
 .filler{
-  height: 500px;
+  height: 600px;
 }
 
 .intro{
   display: flex;
   flex-direction: row;
-  width: 800px;
+  width: 600px;
   max-width: 95%;
-  p{
+  align-items: center;
+  p, h2{
     text-align: left;
     padding-left: 30px;
     margin-top: 0px;
+    margin-bottom: 10px;
+
   }
 }
 .my-name{
@@ -154,16 +157,14 @@ $orange2: #f1846d;
 
 //Projects stuff
 .projects-container{
-  background-color: #333;
-  box-shadow: inset 0 0 10px #000;
+  background-color: #efefef;
+  //box-shadow: inset 0 0 10px #000;
 }
 .projects{
   display: flex;
+  flex-wrap: wrap;
   width: 1200px;
   max-width: 100%;
-  p{
-    color: #ddd;
-  }
   @media screen and (max-width: 950px) {
     flex-direction: column;
   }
@@ -171,6 +172,7 @@ $orange2: #f1846d;
 .project{
   display: flex;
   padding: 20px 0 0 0;
+  max-width: 50%;
   img{
     min-width: 150px;
     max-width: 150px;
@@ -178,8 +180,11 @@ $orange2: #f1846d;
     max-height: 150px;
     margin: 0 20px;
   }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 950px) {
       flex-direction: column;
+      max-width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
       p, h3{
         text-align: center;
       }
@@ -225,7 +230,9 @@ $orange2: #f1846d;
   max-width: 130px;
   min-height: 130px;
   max-height: 130px;
+  align-self: center;
 }
+
 .bubble-img-large{
   min-width: 180px;
   max-width: 180px;
@@ -256,17 +263,21 @@ $orange2: #f1846d;
   display: flex;
   justify-content: flex-start;
   overflow: hidden;
-  max-height: 440px;
-  min-height: 440px;
+  max-height: 280px;
+  min-height: 280px;
   transition: max-height 0.5s;
+  @media screen and (max-width: 950px) {
+    max-height: 500px;
+    min-height: 500px;
+  }
 }
 .extended{
   display: flex;
   justify-content: flex-start;
-  max-height: 1200px;
+  max-height: 900px;
   transition: max-height 0.5s;
   @media screen and (max-width: 950px) {
-    max-height: 2000px;
+    max-height: 1500px;
   }
 }
 
@@ -301,4 +312,7 @@ $orange2: #f1846d;
 .articles{
   padding-bottom: 40px;
   max-width: 95%;
+}
+.inner-shadow{
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }

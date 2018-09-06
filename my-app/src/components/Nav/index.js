@@ -69,9 +69,9 @@ export default class Nav extends Component {
           <div className="nav-container">
             <nav className="nav">
               <ul>
-                <li><a href="#work" onClick={x => this.selectedLink(1)} >Work</a></li>
-                <li><a href="#personal" onClick={x => this.selectedLink(2)} >Personal</a></li>
-                <li><a href="#contact" onClick={x => this.selectedLink(3)} >Contact</a></li>
+                <li><a href="#work" onClick={x => this.selectedLink(1)} >My Work</a></li>
+
+                <li><a href="#contact" onClick={x => this.selectedLink(3)} >Contact Me</a></li>
               </ul>
             </nav>
           </div>
