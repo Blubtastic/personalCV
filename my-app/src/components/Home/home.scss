@@ -108,7 +108,7 @@ $orange2: #f1846d;
 //Short intro stuff (paragraph)
 .paragraph{
   top: 500px;
-  padding: 100px 0;
+  padding: 120px 0;
   div{
     @media screen and (max-width: 600px) {
       flex-direction: column;
@@ -289,8 +289,8 @@ $orange2: #f1846d;
   display: flex;
   justify-content: flex-start;
   overflow: hidden;
-  max-height: 130px;
-  min-height: 130px;
+  max-height: 270px;
+  min-height: 270px;
   transition: max-height 0.5s;
   @media screen and (max-width: 950px) {
     max-height: 500px;
