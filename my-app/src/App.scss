@@ -43,7 +43,7 @@ h1{
   font-family: 'Source Sans Pro', sans-serif;
 }
 h2{
-  color: $text2;
+  color: #111;
   font-size: 170%;
   font-weight: 300;
   text-align: left;
@@ -58,6 +58,9 @@ h3{
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
 
 p{
   font-family: 'Open Sans';
@@ -116,14 +119,25 @@ img{
       font-family: 'Raleway', sans-serif;
       font-weight: 100;
     }
+    @media screen and (max-width: 600px) {
+      h1{
+        font-size: 250%;
+      }
+    }
     h3{
       text-align: center;
       color: $blue1;
     }
 }
 
+.mountain-range{
+  height: 50px;
+  position: relative;
+  top: -110px;
+  width: 100%;
+  background-image: url('./images/footer_range.png');
+}
 .footer{
-  padding-top: 40px;
   background-color: #0173AD;
   padding-bottom: 0px;
   position: relative;
@@ -131,8 +145,7 @@ img{
 
   div{
     flex-direction: row;
-    width: 650px;
-    max-width: 95%;
+
     h1, h2, h3{
       margin-bottom: 0px;
       color: #fefefe;
@@ -143,6 +156,10 @@ img{
       color: #fefefe;
     }
   }
+}
+.footer-content{
+  width: 650px;
+  max-width: 95%;
 }
 .active{
   color: #0173AD !important;

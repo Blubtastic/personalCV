@@ -41,7 +41,6 @@ export default class Projects extends Component {
               <div className="text-left">
                 <h2>Hackerspace NTNU</h2>
                 <p className="narrow-text">
-                  PR-group <br/>
                   I was a member of the student organization HACKERSPACE NTNU for 3 years, which focuses on helping students realize their tech projects by providing equipment, knowledge and a place to work.
                   During this time i was responsible for promoting the organization through creating posters, organizing and so on.
                 </p>
@@ -53,7 +52,6 @@ export default class Projects extends Component {
               <div className="text-left">
                 <h2>Informatics Band</h2>
                 <p className="narrow-text">
-                  Drummer <br/>
                   I am drumming for the recently created Online band, which mainly focuses on playing concerts for various events for the student organization Online.
                   We have weekly rehearsals, but mostly play for fun.
                 </p>
@@ -65,7 +63,6 @@ export default class Projects extends Component {
               <div className="text-left">
                 <h2>Trondheim Propeller Hat Club</h2>
                 <p className="narrow-text">
-                  Co-founder <br/>
                   As a goofy hobby project, me and another student Sølve Bø Hunvik created a group called Trondheim Propeller hat club, which arranges various social events where
                   everyone are welcome as long as they are wearing a propeller hat. We currently have about 100 members.
                 </p>

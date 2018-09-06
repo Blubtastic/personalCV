@@ -10,6 +10,10 @@
   display: flex;
   padding: 10px 10px 10px 10px; }
 
+.row-flex {
+  display: flex;
+  flex-direction: row; }
+
 .logo-container {
   width: 33.3%;
   display: flex;
@@ -70,7 +74,7 @@
 
 .paragraph {
   top: 500px;
-  padding: 100px; }
+  padding: 100px 0; }
   @media screen and (max-width: 600px) {
     .paragraph div {
       flex-direction: column; }
@@ -90,11 +94,15 @@
   width: 600px;
   max-width: 95%;
   align-items: center; }
-  .intro p, .intro h2 {
+  .intro p, .intro h2, .intro h3 {
     text-align: left;
     padding-left: 30px;
     margin-top: 0px;
     margin-bottom: 10px; }
+    @media screen and (max-width: 600px) {
+      .intro p, .intro h2, .intro h3 {
+        padding-left: 0px;
+        text-align: center; } }
 
 .my-name {
   color: #283E56;
@@ -122,12 +130,16 @@
   max-width: 100%; }
   @media screen and (max-width: 950px) {
     .projects {
-      flex-direction: column; } }
+      flex-direction: column; }
+      .projects a {
+        max-width: 100% !important; } }
+  .projects a {
+    max-width: 50%;
+    text-decoration: none; }
 
 .project {
   display: flex;
-  padding: 20px 0 0 0;
-  max-width: 50%; }
+  padding: 30px 0 30px 0; }
   .project img {
     min-width: 150px;
     max-width: 150px;
@@ -168,12 +180,24 @@
     min-height: 130px;
     max-height: 130px;
     transition: max-height 0.3s, max-width 0.3s, min-height 0.3s, min-width 0.3s, padding 0.3s; }
+    @media screen and (max-width: 600px) {
+      .bubbles-container .bubble-img {
+        min-width: 90px;
+        max-width: 90px;
+        min-height: 90px;
+        max-height: 90px; } }
     .bubbles-container .bubble-img:hover {
       padding: 0px;
       min-width: 170px;
       max-width: 170px;
       min-height: 170px;
       max-height: 170px; }
+      @media screen and (max-width: 600px) {
+        .bubbles-container .bubble-img:hover {
+          min-width: 110px;
+          max-width: 110px;
+          min-height: 110px;
+          max-height: 110px; } }
 
 .bubble-img {
   min-width: 130px;
@@ -192,7 +216,7 @@
   height: 0px; }
   .expandBar div div {
     position: relative;
-    top: -90px;
+    top: -130px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -204,8 +228,8 @@
   display: flex;
   justify-content: flex-start;
   overflow: hidden;
-  max-height: 280px;
-  min-height: 280px;
+  max-height: 130px;
+  min-height: 130px;
   transition: max-height 0.5s; }
   @media screen and (max-width: 950px) {
     .collapsed {
@@ -233,7 +257,9 @@
   @media screen and (max-width: 600px) {
     .about-item {
       flex-direction: column; }
-      .about-item p, .about-item h3 {
+      .about-item p {
+        text-align: center; }
+      .about-item h2, .about-item h3 {
         text-align: center; }
       .about-item img {
         margin: auto;
@@ -246,8 +272,8 @@
   border: 1px solid #F05F40; }
 
 .articles {
-  padding-bottom: 40px;
+  margin: 0 20px 40px 20px;
   max-width: 95%; }
 
-.inner-shadow {
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+.blue-text {
+  color: #0173AD; }

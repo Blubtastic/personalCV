@@ -38,6 +38,9 @@ h3 {
   text-align: left;
   font-family: 'Source Sans Pro', sans-serif; }
 
+a {
+  text-decoration: none; }
+
 p {
   font-family: 'Open Sans';
   line-height: 180%;
@@ -90,20 +93,27 @@ img {
     font-size: 400%;
     font-family: 'Raleway', sans-serif;
     font-weight: 100; }
+  @media screen and (max-width: 600px) {
+    .martin h1 {
+      font-size: 250%; } }
   .martin h3 {
     text-align: center;
     color: #0173AD; }
 
+.mountain-range {
+  height: 50px;
+  position: relative;
+  top: -110px;
+  width: 100%;
+  background-image: url("./images/footer_range.png"); }
+
 .footer {
-  padding-top: 40px;
   background-color: #0173AD;
   padding-bottom: 0px;
   position: relative;
   z-index: 1; }
   .footer div {
-    flex-direction: row;
-    width: 650px;
-    max-width: 95%; }
+    flex-direction: row; }
     .footer div h1, .footer div h2, .footer div h3 {
       margin-bottom: 0px;
       color: #fefefe; }
@@ -111,6 +121,10 @@ img {
       margin-top: 10px;
       text-align: center;
       color: #fefefe; }
+
+.footer-content {
+  width: 650px;
+  max-width: 95%; }
 
 .active {
   color: #0173AD !important;

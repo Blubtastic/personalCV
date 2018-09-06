@@ -28,6 +28,10 @@ $orange2: #f1846d;
   display: flex;
   padding: 10px 10px 10px 10px;
 }
+.row-flex{
+  display: flex;
+  flex-direction: row;
+}
 .logo-container{
   width: 33.3%;
   display: flex;
@@ -104,7 +108,7 @@ $orange2: #f1846d;
 //Short intro stuff (paragraph)
 .paragraph{
   top: 500px;
-  padding: 100px;
+  padding: 100px 0;
   div{
     @media screen and (max-width: 600px) {
       flex-direction: column;
@@ -129,11 +133,15 @@ $orange2: #f1846d;
   width: 600px;
   max-width: 95%;
   align-items: center;
-  p, h2{
+  p, h2, h3{
     text-align: left;
     padding-left: 30px;
     margin-top: 0px;
     margin-bottom: 10px;
+    @media screen and (max-width: 600px){
+      padding-left: 0px;
+      text-align: center;
+    }
 
   }
 }
@@ -167,12 +175,18 @@ $orange2: #f1846d;
   max-width: 100%;
   @media screen and (max-width: 950px) {
     flex-direction: column;
+    a{
+      max-width: 100% !important;
+    }
+  }
+  a{
+      max-width: 50%;
+      text-decoration: none;
   }
 }
 .project{
   display: flex;
-  padding: 20px 0 0 0;
-  max-width: 50%;
+  padding: 30px 0 30px 0;
   img{
     min-width: 150px;
     max-width: 150px;
@@ -216,12 +230,24 @@ $orange2: #f1846d;
     min-height: 130px;
     max-height: 130px;
     transition: max-height 0.3s, max-width 0.3s, min-height 0.3s, min-width 0.3s, padding 0.3s;
+    @media screen and (max-width: 600px){
+      min-width: 90px;
+      max-width: 90px;
+      min-height: 90px;
+      max-height: 90px;
+    }
     &:hover{
       padding: 0px;
       min-width: 170px;
       max-width: 170px;
       min-height: 170px;
       max-height: 170px;
+      @media screen and (max-width: 600px){
+        min-width: 110px;
+        max-width: 110px;
+        min-height: 110px;
+        max-height: 110px;
+      }
     }
   }
 }
@@ -248,7 +274,7 @@ $orange2: #f1846d;
   div{
     div{
       position: relative;
-      top: -90px;
+      top: -130px;
       margin: auto;
       display: flex;
       justify-content: center;
@@ -263,8 +289,8 @@ $orange2: #f1846d;
   display: flex;
   justify-content: flex-start;
   overflow: hidden;
-  max-height: 280px;
-  min-height: 280px;
+  max-height: 130px;
+  min-height: 130px;
   transition: max-height 0.5s;
   @media screen and (max-width: 950px) {
     max-height: 500px;
@@ -294,7 +320,10 @@ $orange2: #f1846d;
   }
   @media screen and (max-width: 600px) {
     flex-direction: column;
-    p, h3{
+    p{
+      text-align: center;
+    }
+    h2, h3{
       text-align: center;
     }
     img{
@@ -310,9 +339,10 @@ $orange2: #f1846d;
   border: 1px solid #F05F40;
 }
 .articles{
-  padding-bottom: 40px;
+  margin: 0 20px 40px 20px;
   max-width: 95%;
 }
-.inner-shadow{
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+.blue-text{
+  color: #0173AD;
 }
