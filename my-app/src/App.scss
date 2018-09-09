@@ -89,46 +89,7 @@ img{
   background-color: #fff;
 }
 
-//Cover image
-.cover-img{
-  max-width: 100%;
-  height: 230px;
-  position: relative;
-  top: 600px;
-  background-image: url('./images/simple_cover3.png');
-  background-size: auto 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  img{
-    max-width: 100%;
-    min-width: 100%;
-  }
-}
-.martin{
-    position: relative;
-    top: -330px;
-    padding-bottom: 1px;
-    padding-top: 20px;
-    background-image: url('./images/clouds.png');
-    background-size: auto 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    h1{
-      color: $blue1;
-      font-size: 400%;
-      font-family: 'Raleway', sans-serif;
-      font-weight: 100;
-    }
-    @media screen and (max-width: 600px) {
-      h1{
-        font-size: 250%;
-      }
-    }
-    h3{
-      text-align: center;
-      color: $blue1;
-    }
-}
+
 
 .mountain-range{
   height: 50px;
@@ -165,4 +126,464 @@ img{
   color: #0173AD !important;
   text-decoration: underline !important;
 
+}
+
+
+$primary: #283E56;
+$secondary: #F05F40;
+
+$gray: #eee;
+$white: #fff;
+
+$text1: #1e836c;
+$text2: #45b29a;
+
+$blue1: #0173AD;
+$blue2: #00E2F6;
+
+$orange1: #F05F40;
+$orange2: #f1846d;
+
+.no-bg{
+  background-color: transparent !important;
+}
+.gray-bg{
+  background-color: $gray;
+}
+
+//NAV stuff
+//-----------------------------------------------------------------------------
+.row{
+  width: 950px;
+  max-width: 100%;
+  display: flex;
+  padding: 10px 10px 10px 10px;
+}
+.row-flex{
+  display: flex;
+  flex-direction: row;
+}
+.logo-container{
+  width: 33.3%;
+  display: flex;
+  justify-content: flex-start;
+  @media screen and (max-width: 950px) {
+    width: 1%;
+  }
+}
+.nav-container{
+  width: 66.7%;
+  display: flex;
+  justify-content: flex-end;
+  @media screen and (max-width: 950px) {
+    width: 99%;
+  }
+}
+//List items
+.nav li{
+  display: block;
+  float: left;
+  a{
+    margin: 0 0 0 2em;
+    font-size: 120%;
+    text-decoration: none;
+    color: $blue1;
+  }
+  a:active{
+    color: #002a3f;
+  }
+}
+.sticky{
+  width: 100%;
+  position: fixed;
+  left: 37.5%;
+  margin-left: -37.5%;
+  padding: 0;
+  background-color: rgba(255,255,255,0.8);
+  z-index: 10;
+  box-shadow: 0 0 3px #ccc;
+  transition: background-color 0.5s, padding 0.3s, box-shadow 0.3s;
+  div{
+    padding: 0px;
+    transition: padding 0.3s;
+    @media screen and (max-width: 950px) {
+      padding: 0 5px;
+    }
+    div{
+      nav{
+        ul{
+          line-height: 43px;
+          margin: 0px;
+        }
+      }
+      a{
+        img{
+          width: 60px;
+          height: 25px;
+          padding-top: 9px;
+        }
+      }
+    }
+  }
+}
+.navbox{
+  z-index: 10;
+  width: 100%;
+  position: relative;
+  left: 37.5%;
+  margin-left: -37.5%;
+}
+//----------------------------------
+
+
+//Short intro stuff (paragraph)
+.paragraph{
+  top: 500px;
+  padding: 120px 0;
+  div{
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      p, h3{
+        text-align: center;
+      }
+      img{
+        margin: auto;
+        margin-bottom: 15px;
+        padding-right: 0px;
+      }
+    }
+  }
+}
+
+
+.intro{
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  max-width: 95%;
+  align-items: center;
+  p, h2, h3{
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    @media screen and (max-width: 600px){
+      padding-left: 0px;
+      text-align: center;
+    }
+
+  }
+}
+.my-name{
+  color: $primary;
+  position: relative;
+  top: 500px;
+  font-family: 'Kavivanar', cursive;
+  font-size: 250%;
+  font-weight: 400;
+}
+.my-quote{
+  color: $secondary;
+  text-align: left;
+  position: relative;
+  top: -5px;
+  font-size: 150%;
+  font-weight: 100;
+}
+
+
+//Projects stuff
+.projects-container{
+  background-color: #efefef;
+  //box-shadow: inset 0 0 10px #000;
+}
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  max-width: 100%;
+  @media screen and (max-width: 950px) {
+    flex-direction: column;
+    a{
+      max-width: 100% !important;
+    }
+  }
+  a{
+      max-width: 50%;
+      text-decoration: none;
+      border-radius: 25px;
+      :hover{
+        background-color: #e8e8e8;
+        transition: background-color 0.1s;
+      }
+  }
+}
+.project{
+  display: flex;
+  padding: 30px 0 30px 0;
+  img{
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 150px;
+    max-height: 150px;
+    margin: 0 20px;
+  }
+    @media screen and (max-width: 950px) {
+      flex-direction: column;
+      max-width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      p, h3{
+        text-align: center;
+      }
+      img{
+        margin: auto;
+        margin-bottom: 15px;
+      }
+    }
+}
+.left-project{
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  margin: 0 15px 0 15px;
+  padding-bottom: 30px;
+}
+.right-project{
+  text-align: left;
+  margin: 0 15px 0 15px;
+  padding: 0 0 10px 0;
+}
+.bubbles-container{
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .bubble-img{
+    vertical-align: middle;
+    padding: 20px 0 20px 0;
+    min-width: 130px;
+    max-width: 130px;
+    min-height: 130px;
+    max-height: 130px;
+    transition: max-height 0.3s, max-width 0.3s, min-height 0.3s, min-width 0.3s, padding 0.3s;
+    @media screen and (max-width: 600px){
+      min-width: 90px;
+      max-width: 90px;
+      min-height: 90px;
+      max-height: 90px;
+    }
+    &:hover{
+      padding: 0px;
+      min-width: 170px;
+      max-width: 170px;
+      min-height: 170px;
+      max-height: 170px;
+      @media screen and (max-width: 600px){
+        min-width: 110px;
+        max-width: 110px;
+        min-height: 110px;
+        max-height: 110px;
+      }
+    }
+  }
+}
+.bubble-img{
+  min-width: 130px;
+  max-width: 130px;
+  min-height: 130px;
+  max-height: 130px;
+  align-self: center;
+}
+
+.bubble-img-large{
+  min-width: 180px;
+  max-width: 180px;
+  min-height: 180px;
+  max-height: 180px;
+}
+//About stuff
+
+.expandBar{
+  height: 0px;
+  //box-shadow: 0 -3px 3px #000;
+  //box-shadow: 0 0 7px #333;
+  div{
+    div{
+      position: relative;
+      top: -130px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+  p{
+    color: #fff;
+  }
+}
+.collapsed{
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  max-height: 270px;
+  min-height: 270px;
+  transition: max-height 0.5s;
+  @media screen and (max-width: 950px) {
+    max-height: 500px;
+    min-height: 500px;
+  }
+}
+.extended{
+  display: flex;
+  justify-content: flex-start;
+  max-height: 900px;
+  transition: max-height 0.5s;
+  @media screen and (max-width: 950px) {
+    max-height: 1500px;
+  }
+}
+
+.about-item{
+  padding-bottom: 30px;
+  width: 1000px;
+  max-width: 100%;
+  margin: auto;
+  img{
+    padding-right: 50px;
+  }
+  h3{
+    text-align: left;
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    p{
+      text-align: center;
+    }
+    h2, h3{
+      text-align: center;
+    }
+    img{
+      margin: auto;
+      margin-bottom: 15px;
+      padding-right: 0px;
+    }
+  }
+}
+.horline{
+  width: 150px;
+  margin-bottom: 70px;
+  border: 1px solid #F05F40;
+}
+.articles{
+  margin: 0 20px 40px 20px;
+  max-width: 95%;
+}
+
+.blue-text{
+  color: #0173AD;
+}
+
+
+
+//LANDING PAGE: Mountain images, Parallax effect & Welcome text ---------------
+//TEXT
+.cover_text{
+    position: relative;
+    top: 100px;
+    padding-bottom: 1px;
+    padding-top: 20px;
+    h1{
+      color: $blue1;
+      font-size: 400%;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 100;
+    }
+    @media screen and (max-width: 600px) {
+      h1{
+        font-size: 250%;
+      }
+    }
+    h3{
+      text-align: center;
+      color: $blue1;
+    }
+}
+.cover_img{
+  background-image: url('./images/clouds.png');
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 160px;
+  width: 100%;
+  top: 240px;
+
+}
+//IMAGES
+.cover-img{
+  max-width: 100%;
+  height: 260px;
+  position: relative;
+  top: 600px;
+  background-image: url('./images/simple_cover.png');
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  img{
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+.filler{
+  height: 570px;
+}
+//PARRALLAX EFFECT
+.parallax {
+  perspective: 1px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+}
+.parallax_container{
+  position: relative;
+  top: 400px;
+  width: 100%;
+}
+
+//Parralax layers
+.parallax_layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 300px;
+  z-index: -10;
+}
+.image_layer{
+  position: absolute;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.parallax_layer_img1 {
+  transform: translateZ(-0.3px) scale(1.3);
+  background-image: url('./images/simple_cover1.png');
+}
+.parallax_layer_img2{
+  transform: translateZ(-0.6px) scale(1.6);
+  background-image: url('./images/simple_cover2.png');
+  top: 90px;
+}
+.parallax_layer_img3 {
+  transform: translateZ(-0.9px) scale(1.9);
+  background-image: url('./images/simple_cover3.png');
+  top: 180px;
+}
+.parallax_layer3{
+  transform: translateZ(-0.9px) scale(1.9);
+}
+.parallax_layer2{
+  transform: translateZ(-0.6px) scale(1.6);
 }

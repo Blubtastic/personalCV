@@ -14,17 +14,13 @@ import AboutMe from './about-me';
 export default class Home extends Component {
   render() {
     return(
-      <div className="App">
+      <div className="App parallax">
         <Nav/>
 
         <Cover/>
-
         <Paragraph/>
-
         <Projects/>
-
         <AboutMe/>
-
 
         <Footer/>
       </div>
