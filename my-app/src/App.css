@@ -1,8 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:100i,200i");
 @import url("https://fonts.googleapis.com/css?family=Lato");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css?family=Kavivanar");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900");
 .App {
   text-align: center; }
 
@@ -11,32 +9,28 @@ body {
   padding: 0;
   font-family: 'Lato';
   background-color: #ddd; }
-  body.in-transition {
-    transition: transform 900ms ease; }
 
 h1, h2, h3 {
-  margin-top: 0; }
+  margin-top: 0;
+  font-family: 'Source Sans Pro', sans-serif; }
 
 h1 {
   color: #0173AD;
   font-size: 280%;
-  font-weight: 300;
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-weight: 300; }
 
 h2 {
   color: #111;
   font-size: 170%;
   font-weight: 300;
   text-align: left;
-  margin-bottom: 10px;
-  font-family: 'Source Sans Pro', sans-serif; }
+  margin-bottom: 10px; }
 
 h3 {
   color: #111;
   font-weight: 300;
   font-size: 130%;
-  text-align: left;
-  font-family: 'Source Sans Pro', sans-serif; }
+  text-align: left; }
 
 a {
   text-decoration: none; }
@@ -69,7 +63,7 @@ img {
 .mountain-range {
   height: 50px;
   position: relative;
-  top: -110px;
+  top: -108px;
   width: 100%;
   background-image: url("./images/footer_range.png"); }
 
@@ -82,11 +76,14 @@ img {
     flex-direction: row; }
     .footer div h1, .footer div h2, .footer div h3 {
       margin-bottom: 0px;
-      color: #fefefe; }
+      color: #efefef; }
     .footer div p {
       margin-top: 10px;
       text-align: center;
-      color: #fefefe; }
+      color: #efefef; }
+  @media screen and (max-width: 750px) {
+    .footer {
+      padding-bottom: 120px; } }
 
 .footer-content {
   width: 650px;
@@ -96,21 +93,11 @@ img {
   color: #0173AD !important;
   text-decoration: underline !important; }
 
-.no-bg {
-  background-color: transparent !important; }
-
-.gray-bg {
-  background-color: #eee; }
-
 .row {
   width: 950px;
   max-width: 100%;
   display: flex;
   padding: 10px 10px 10px 10px; }
-
-.row-flex {
-  display: flex;
-  flex-direction: row; }
 
 .logo-container {
   width: 33.3%;
@@ -136,48 +123,27 @@ img {
     font-size: 120%;
     text-decoration: none;
     color: #0173AD; }
+    @media screen and (max-width: 400px) {
+      .nav li a {
+        font-size: 100%; } }
   .nav li a:active {
     color: #002a3f; }
 
-.sticky {
-  width: 100%;
-  position: fixed;
-  left: 37.5%;
-  margin-left: -37.5%;
-  padding: 0;
-  background-color: rgba(255, 255, 255, 0.8);
-  z-index: 10;
-  box-shadow: 0 0 3px #ccc;
-  transition: background-color 0.5s, padding 0.3s, box-shadow 0.3s; }
-  .sticky div {
-    padding: 0px;
-    transition: padding 0.3s; }
-    @media screen and (max-width: 950px) {
-      .sticky div {
-        padding: 0 5px; } }
-    .sticky div div nav ul {
-      line-height: 43px;
-      margin: 0px; }
-    .sticky div div a img {
-      width: 60px;
-      height: 25px;
-      padding-top: 9px; }
-
-.navbox {
-  z-index: 10;
-  width: 100%;
-  position: relative;
-  left: 37.5%;
-  margin-left: -37.5%; }
+.move_to_top {
+  position: absolute;
+  right: 40px;
+  bottom: 40px; }
+  @media screen and (max-width: 750px) {
+    .move_to_top {
+      left: 0;
+      right: 0;
+      bottom: 10px; } }
 
 .paragraph {
-  top: 500px;
   padding: 120px 0; }
   @media screen and (max-width: 600px) {
     .paragraph div {
       flex-direction: column; }
-      .paragraph div p, .paragraph div h3 {
-        text-align: center; }
       .paragraph div img {
         margin: auto;
         margin-bottom: 15px;
@@ -189,31 +155,12 @@ img {
   width: 600px;
   max-width: 95%;
   align-items: center; }
-  .intro p, .intro h2, .intro h3 {
-    text-align: left;
-    padding-left: 30px;
-    margin-top: 0px;
-    margin-bottom: 10px; }
+  .intro p, .intro h2 {
+    padding-left: 30px; }
     @media screen and (max-width: 600px) {
-      .intro p, .intro h2, .intro h3 {
+      .intro p, .intro h2 {
         padding-left: 0px;
         text-align: center; } }
-
-.my-name {
-  color: #283E56;
-  position: relative;
-  top: 500px;
-  font-family: 'Kavivanar', cursive;
-  font-size: 250%;
-  font-weight: 400; }
-
-.my-quote {
-  color: #F05F40;
-  text-align: left;
-  position: relative;
-  top: -5px;
-  font-size: 150%;
-  font-weight: 100; }
 
 .projects-container {
   background-color: #efefef; }
@@ -257,18 +204,6 @@ img {
         margin: auto;
         margin-bottom: 15px; } }
 
-.left-project {
-  display: flex;
-  justify-content: flex-start;
-  text-align: left;
-  margin: 0 15px 0 15px;
-  padding-bottom: 30px; }
-
-.right-project {
-  text-align: left;
-  margin: 0 15px 0 15px;
-  padding: 0 0 10px 0; }
-
 .bubbles-container {
   padding-bottom: 10px;
   display: flex;
@@ -287,7 +222,8 @@ img {
         min-width: 90px;
         max-width: 90px;
         min-height: 90px;
-        max-height: 90px; } }
+        max-height: 90px;
+        padding: 5px; } }
     .bubbles-container .bubble-img:hover {
       padding: 0px;
       min-width: 170px;
@@ -368,11 +304,6 @@ img {
         margin-bottom: 15px;
         padding-right: 0px; } }
 
-.horline {
-  width: 150px;
-  margin-bottom: 70px;
-  border: 1px solid #F05F40; }
-
 .articles {
   margin: 0 20px 40px 20px;
   max-width: 95%; }
@@ -380,71 +311,53 @@ img {
 .blue-text {
   color: #0173AD; }
 
-.cover_text {
-  position: relative;
-  top: 100px;
-  padding-bottom: 1px;
-  padding-top: 20px; }
+.cover_text h1 {
+  color: #0173AD;
+  font-size: 500%;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  margin: 0px; }
+
+.cover_text h3 {
+  text-align: center;
+  color: #0173AD;
+  margin: 0px; }
+
+@media screen and (max-width: 600px) {
   .cover_text h1 {
-    color: #0173AD;
-    font-size: 400%;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 100; }
-  @media screen and (max-width: 600px) {
-    .cover_text h1 {
-      font-size: 250%; } }
-  .cover_text h3 {
-    text-align: center;
-    color: #0173AD; }
+    font-size: 350%; } }
 
 .cover_img {
   background-image: url("./images/clouds.png");
   background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
-  position: absolute;
-  height: 160px;
-  width: 100%;
-  top: 240px; }
-
-.cover-img {
-  max-width: 100%;
-  height: 260px;
-  position: relative;
-  top: 600px;
-  background-image: url("./images/simple_cover.png");
-  background-size: auto 100%;
-  background-position: center;
-  background-repeat: no-repeat; }
-  .cover-img img {
-    max-width: 100%;
-    min-width: 100%; }
+  height: 180px;
+  width: 100%; }
 
 .filler {
-  height: 570px; }
+  height: 800px; }
 
 .parallax {
+  -webkit-perspective: 1px;
+  /* Safari 4-8 */
   perspective: 1px;
+  scroll-behavior: smooth;
   overflow-x: hidden;
   overflow-y: auto;
   height: 100vh; }
 
-.parallax_container {
-  position: relative;
-  top: 400px;
-  width: 100%; }
-
 .parallax_layer {
   position: absolute;
-  top: 0;
+  top: 720px;
   right: 0;
   bottom: 0;
   left: 0;
-  height: 300px;
-  z-index: -10; }
+  z-index: -5; }
 
 .image_layer {
   position: absolute;
+  height: 300px;
   background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat; }
@@ -456,15 +369,17 @@ img {
 .parallax_layer_img2 {
   transform: translateZ(-0.6px) scale(1.6);
   background-image: url("./images/simple_cover2.png");
-  top: 90px; }
+  top: 800px; }
 
 .parallax_layer_img3 {
   transform: translateZ(-0.9px) scale(1.9);
   background-image: url("./images/simple_cover3.png");
-  top: 180px; }
+  top: 900px; }
 
 .parallax_layer3 {
-  transform: translateZ(-0.9px) scale(1.9); }
+  transform: translateZ(-0.9px) scale(1.9);
+  top: 350px; }
 
 .parallax_layer2 {
-  transform: translateZ(-0.6px) scale(1.6); }
+  transform: translateZ(-0.6px) scale(1.6);
+  top: 170px; }

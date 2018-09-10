@@ -15,7 +15,6 @@ export default class Nav extends Component {
     this.handleScroll = this.handleScroll.bind(this);
   }
 
-
   componentDidMount(){
     window.addEventListener('scroll', this.handleScroll);
   }
@@ -61,17 +60,17 @@ export default class Nav extends Component {
 
   render() {
     return(
-      <div className={this.state.navClass}>
+      <div className={this.state.navClass} id="top">
         <div className="row">
           <div className="logo-container">
-            <a href="#top" onClick={x => this.selectedLink(0)} ><img src={ms} alt="logo" width="90" height="40" /></a>
+            <a href="" onClick={x => this.selectedLink(0)} ><img src={ms} alt="logo" width="90" height="40" /></a>
           </div>
           <div className="nav-container">
             <nav className="nav">
               <ul>
+                {/*<li><a href="#me" onClick={x => this.selectedLink(1)} >Me</a></li>*/}
                 <li><a href="#work" onClick={x => this.selectedLink(1)} >My Work</a></li>
-
-                <li><a href="#contact" onClick={x => this.selectedLink(3)} >Contact Me</a></li>
+                <li><a href="#contact" onClick={x => this.selectedLink(3)} >Contact</a></li>
               </ul>
             </nav>
           </div>

@@ -5,10 +5,8 @@ import me from '../../images/me.png'
 export default class Paragraph extends Component {
   render() {
     return(
-      <div>
-        <div className="filler"></div>
-        <div className="column page-section paragraph">
-
+      <div id="me">
+        <div className="page-section paragraph">
 
           <div className="intro">
             <img src={me} className="bubble-img-large"alt="me"/>
