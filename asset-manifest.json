@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.830717a2.css",
-  "main.css.map": "static/css/main.830717a2.css.map",
-  "main.js": "static/js/main.5d993cfc.js",
-  "main.js.map": "static/js/main.5d993cfc.js.map",
+  "main.css": "static/css/main.47c4c8a9.css",
+  "main.css.map": "static/css/main.47c4c8a9.css.map",
+  "main.js": "static/js/main.0fb6b16e.js",
+  "main.js.map": "static/js/main.0fb6b16e.js.map",
   "static\\media\\angular.png": "static/media/angular.772c3a0b.png",
   "static\\media\\bachelor.png": "static/media/bachelor.d87c19d5.png",
   "static\\media\\face.png": "static/media/face.54334731.png",
@@ -18,8 +18,7 @@
   "static\\media\\propeller_simple2.png": "static/media/propeller_simple2.65a967e4.png",
   "static\\media\\raspberryPI.png": "static/media/raspberryPI.76bf2359.png",
   "static\\media\\react.png": "static/media/react.a728f73d.png",
-  "static\\media\\simple_cover.png": "static/media/simple_cover.445026b9.png",
-  "static\\media\\simple_cover1.png": "static/media/simple_cover1.06720f62.png",
+  "static\\media\\simple_cover1.png": "static/media/simple_cover1.cb3b6f82.png",
   "static\\media\\simple_cover2.png": "static/media/simple_cover2.f740d341.png",
   "static\\media\\simple_cover3.png": "static/media/simple_cover3.8f8c66d3.png"
 }
