@@ -1,0 +1,456 @@
+//Google web fonts
+@import url('https://fonts.googleapis.com/css?family=Raleway:100i,200i');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900');
+
+$primary: #0173AD;
+
+$text1: #111;
+$gray: #ddd;
+$white: #fff;
+$offwhite: #efefef;
+
+.App {
+  text-align: center;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato';
+  background-color: $gray;
+}
+h1,h2, h3{
+  margin-top: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+h1{
+  color: $primary;
+  font-size: 280%;
+  font-weight: 300;
+}
+h2{
+  color: $text1;
+  font-size: 170%;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 10px;
+}
+h3{
+  color: $text1;
+  font-weight: 300;
+  font-size: 130%;
+  text-align: left;
+}
+
+a{
+  text-decoration: none;
+}
+p{
+  font-family: 'Open Sans';
+  line-height: 180%;
+  color: $text1;
+  text-align: left;
+}
+img{
+  transition: height 0.3s, width 0.3s;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  transition: background-color 0.5s, padding 0.3s, box-shadow 0.3s;
+}
+.column{
+  flex-direction: column;
+  align-items: center;
+}
+.page-section{
+  display: flex;
+  justify-content: center;
+  padding: 60px 0px;
+  background-color: $white;
+}
+
+.mountain-range{
+  height: 50px;
+  position: relative;
+  top: -108px;
+  width: 100%;
+  background-image: url('./images/footer_range.png');
+}
+.footer{
+  background-color: $primary;
+  padding-bottom: 0px;
+  position: relative;
+  z-index: 1;
+  div{
+    flex-direction: row;
+    h1, h2, h3{
+      margin-bottom: 0px;
+      color: $offwhite;
+    }
+    p{
+      margin-top: 10px;
+      text-align: center;
+      color: $offwhite;
+    }
+  }
+    @media screen and (max-width: 750px) {
+      padding-bottom: 120px;
+    }
+}
+.footer-content{
+  width: 650px;
+  max-width: 95%;
+}
+.active{
+  color: $primary !important;
+  text-decoration: underline !important;
+}
+
+
+
+//NAVBAR STYLING
+//-----------------------------------------------------------------------------
+.row{
+  width: 950px;
+  max-width: 100%;
+  display: flex;
+  padding: 10px 10px 10px 10px;
+}
+
+.logo-container{
+  width: 33.3%;
+  display: flex;
+  justify-content: flex-start;
+  @media screen and (max-width: 950px) {
+    width: 1%;
+  }
+}
+.nav-container{
+  width: 66.7%;
+  display: flex;
+  justify-content: flex-end;
+  @media screen and (max-width: 950px) {
+    width: 99%;
+  }
+}
+//List items
+.nav li{
+  display: block;
+  float: left;
+  a{
+    margin: 0 0 0 2em;
+    font-size: 120%;
+    text-decoration: none;
+    color: $primary;
+    @media screen and (max-width: 400px) {
+      font-size: 100%;
+    }
+  }
+  a:active{
+    color: #002a3f;
+  }
+}
+.move_to_top{
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  @media screen and (max-width: 750px) {
+    left: 0;
+    right: 0;
+    bottom: 10px;
+  }
+}
+
+
+//SHORT ABOUT ME
+//-----------------------------------------------------------------------------
+.paragraph{
+  padding: 120px 0;
+  div{
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      img{
+        margin: auto;
+        margin-bottom: 15px;
+        padding-right: 0px;
+      }
+    }
+  }
+}
+.intro{
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  max-width: 95%;
+  align-items: center;
+  p, h2{
+    padding-left: 30px;
+    @media screen and (max-width: 600px){
+      padding-left: 0px;
+      text-align: center;
+    }
+  }
+}
+
+
+
+//PROJECTS STUFF
+//-----------------------------------------------------------------------------
+.projects-container{
+  background-color: $offwhite;
+}
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  max-width: 100%;
+  @media screen and (max-width: 950px) {
+    flex-direction: column;
+    a{
+      max-width: 100% !important;
+    }
+  }
+  a{
+    max-width: 50%;
+    text-decoration: none;
+    border-radius: 25px;
+    :hover{
+      background-color: #e8e8e8;
+      transition: background-color 0.1s;
+    }
+  }
+}
+.project{
+  display: flex;
+  padding: 30px 0 30px 0;
+  img{
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 150px;
+    max-height: 150px;
+    margin: 0 20px;
+  }
+    @media screen and (max-width: 950px) {
+      flex-direction: column;
+      max-width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+      p, h3{
+        text-align: center;
+      }
+      img{
+        margin: auto;
+        margin-bottom: 15px;
+      }
+    }
+}
+.bubbles-container{
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  .bubble-img{
+    vertical-align: middle;
+    padding: 20px 0 20px 0;
+    min-width: 130px;
+    max-width: 130px;
+    min-height: 130px;
+    max-height: 130px;
+    transition: max-height 0.3s, max-width 0.3s, min-height 0.3s, min-width 0.3s, padding 0.3s;
+    @media screen and (max-width: 600px){
+      min-width: 90px;
+      max-width: 90px;
+      min-height: 90px;
+      max-height: 90px;
+      padding: 5px;
+    }
+    &:hover{
+      padding: 0px;
+      min-width: 170px;
+      max-width: 170px;
+      min-height: 170px;
+      max-height: 170px;
+      @media screen and (max-width: 600px){
+        min-width: 110px;
+        max-width: 110px;
+        min-height: 110px;
+        max-height: 110px;
+      }
+    }
+  }
+}
+.bubble-img{
+  min-width: 130px;
+  max-width: 130px;
+  min-height: 130px;
+  max-height: 130px;
+  align-self: center;
+}
+
+.bubble-img-large{
+  min-width: 180px;
+  max-width: 180px;
+  min-height: 180px;
+  max-height: 180px;
+}
+
+//VOLUNTARY WORK
+//-----------------------------------------------------------------------------
+.expandBar{
+  height: 0px;
+  div{
+    div{
+      position: relative;
+      top: -130px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+    }
+  }
+  p{
+    color: $white;
+  }
+}
+.collapsed{
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  max-height: 270px;
+  min-height: 270px;
+  transition: max-height 0.5s;
+  @media screen and (max-width: 950px) {
+    max-height: 500px;
+    min-height: 500px;
+  }
+}
+.extended{
+  display: flex;
+  justify-content: flex-start;
+  max-height: 900px;
+  transition: max-height 0.5s;
+  @media screen and (max-width: 950px) {
+    max-height: 1500px;
+  }
+}
+
+.about-item{
+  padding-bottom: 30px;
+  width: 1000px;
+  max-width: 100%;
+  margin: auto;
+  img{
+    padding-right: 50px;
+  }
+  h3{
+    text-align: left;
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    p{
+      text-align: center;
+    }
+    h2, h3{
+      text-align: center;
+    }
+    img{
+      margin: auto;
+      margin-bottom: 15px;
+      padding-right: 0px;
+    }
+  }
+}
+.articles{
+  margin: 0 20px 40px 20px;
+  max-width: 95%;
+}
+.blue-text{
+  color: $primary;
+}
+
+
+
+//LANDING PAGE: Mountain images, Parallax effect & Welcome text ---------------
+//TEXT
+.cover_text{
+  h1{
+    color: $primary;
+    font-size: 500%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    margin: 0px;
+  }
+  h3{
+    text-align: center;
+    color: $primary;
+    margin: 0px;
+  }
+  @media screen and (max-width: 600px) {
+    h1{
+      font-size: 350%;
+    }
+  }
+}
+.cover_img{
+  background-image: url('./images/clouds.png');
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 180px;
+  width: 100%;
+}
+
+.filler{
+  height: 800px;
+}
+//PARRALLAX EFFECT
+.parallax {
+  -webkit-perspective: 1px; /* Safari 4-8 */
+  perspective: 1px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+}
+
+//Parralax layers
+.parallax_layer {
+  position: absolute;
+  top: 720px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -5;
+}
+.image_layer{
+  position: absolute;
+  height: 300px;
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.parallax_layer_img1 {
+  transform: translateZ(-0.3px) scale(1.3);
+  background-image: url('./images/simple_cover1.png');
+}
+.parallax_layer_img2{
+  transform: translateZ(-0.6px) scale(1.6);
+  background-image: url('./images/simple_cover2.png');
+  top: 800px;
+}
+.parallax_layer_img3 {
+  transform: translateZ(-0.9px) scale(1.9);
+  background-image: url('./images/simple_cover3.png');
+  top: 900px;
+}
+.parallax_layer3{
+  transform: translateZ(-0.9px) scale(1.9);
+  top: 350px;
+}
+.parallax_layer2{
+  transform: translateZ(-0.6px) scale(1.6);
+  top: 170px;
+}
